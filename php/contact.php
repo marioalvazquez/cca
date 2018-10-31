@@ -43,7 +43,7 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'marioal.vazquez@gmail.com';  // please change this email id
+	$to = 'concepcioncabrera18@gmail.com';  // please change this email id
 	$subject = 'Contacto : Contacto desde sitio web';
 
 	$body = "De: $name\n Correo Electrónico: $email\n Mensaje:\n $message";

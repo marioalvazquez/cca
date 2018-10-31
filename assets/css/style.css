@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
@@ -648,7 +649,7 @@ a,
 --------------------------------------------------------------*/
 .btn {
   border-radius: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -729,13 +730,13 @@ a,
 
 .btn-border-d {
   background: transparent;
-  border: 1px solid #111111;
-  color: #111;
+  border: 1px solid #C5333E;
+  color: #C5333E;
 }
 
 .btn.btn-border-d:hover,
 .btn.btn-border-d:focus {
-  background: #111111;
+  background: #C5333E;
   color: #fff;
 }
 
@@ -812,7 +813,7 @@ a,
 
 /* Forms common style */
 .form-control {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -888,7 +889,7 @@ blockquote {
 }
 
 .font-alt {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -1243,7 +1244,7 @@ General Styles - Owlcarousel
   border: 0;
   border-radius: 0;
   z-index: 1000;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 11px;
@@ -2225,7 +2226,7 @@ Google map
 
 .more-link:after {
   content: "\00BB";
-  color: #666666;
+  color: #C5333E;
   padding-left: 5px;
 }
 
@@ -2934,4 +2935,17 @@ Google map
 }
 .socials-header i{
   padding-top: 15px !important;
+}
+
+.modal-body .module-subtitle{
+  margin-bottom: 15px;
+}
+.module-title{
+  color: #C5333E;
+}
+.video-controls-text{
+  padding: .2rem .5rem;
+  background: #C5333E;
+  color: #e5e5e5;
+  width: 200px;
 }
