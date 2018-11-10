@@ -17,6 +17,12 @@
 		$errors['message'] = 'Por favor, introduce tu mensaje';
 	}
 
+	//Check if message has been entered
+	if (!isset($_POST['comprobante'])) {
+		$errors['comprobante'] = 'Por favor, introduce archivo de comprobante de pago';
+	}
+
+
 	$errorOutput = '';
 
 	if(!empty($errors)){
@@ -44,7 +50,7 @@
 	$message = $_POST['message'];
 	$from = $email;
 	$to = 'concepcioncabrera18@gmail.com';  // please change this email id
-	$subject = 'Contacto : Contacto desde sitio web';
+	$subject = 'Comprobante de Pago : Contacto desde sitio web';
 
 	$body = "De: $name\n Correo Electrónico: $email\n Mensaje:\n $message";
 
@@ -56,7 +62,7 @@
 	if (mail ($to, $subject, $body, $headers)) {
 		$result .= '<div class="alert alert-success alert-dismissible" role="alert">';
  		$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-		$result .= 'Registro recibido, pronto estaremos en contacto. ¡Gracias!';
+		$result .= 'GRACIAS, TU RESERVACION HA SIDO EXITOSAMENTE REALIZADA. Recibirás un correo de confirmación, en caso de no recibir ninguna notificación, comunicarse al número de atención a clientes…';
 		$result .= '</div>';
 
 		echo $result;
