@@ -208,6 +208,28 @@
                     </tr>
                   </table>
                 </div>
+                <div class="post text-right" id="reserva-ct">
+                  <a class="btn btn-border-d btn-round btn-donativo" id="btn-reserva">Reserva</a>
+                </div>
+                <div class="post text-right" id="llama-ct" hidden>
+                  <p>
+                    <a href="tel:+5215586623528" class="btn btn-border-d btn-round btn-donativo" id="btn-llama"><i class="fa fa-phone"></i> Llamar</a>
+                    ó
+                    <a href="mailto:concepcioncabrera18@gmail.com" class="btn btn-border-d btn-round btn-donativo" id="btn-correo"><i class="fa fa-envelope"></i> Enviar Correo</a>
+                  </p>
+                  <p>
+                    <strong>“Para confirmar tu asistencia es necesario comunicarse al siguiente número telefónico ó correo para obtener tu número de folio,
+                    es necesario seguir las instrucciones antes de realizar el pago”.</strong> Una vez finalizada tu llamada podrás realizar el pago en línea.
+                  </p>
+                </div>
+                <div class="post text-right" id="paypal-ct" hidden>
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="WD673XKMU4BG4">
+                    <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+                </div>
                 </div>
                 <h4 class="font-alt mt-40 mb-0">Mayores Informes</h4>
                 <hr class="divider-w mt-10 mb-20">
@@ -287,5 +309,15 @@
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      $('#btn-reserva').click(function(ev){
+        ev.preventDefault();
+        $('#reserva-ct').fadeOut();
+        $('#llama-ct').fadeIn();
+      });
+      $('#btn-llama, #btn-correo').click(function(ev){
+        $('#paypal-ct').fadeIn();
+      });
+      </script>
   </body>
 </html>
