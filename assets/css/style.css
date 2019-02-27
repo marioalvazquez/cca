@@ -2955,3 +2955,24 @@ Google map
 #InformationVideo{
   width: 100% !important;
 }
+
+
+#days, #hours, #minutes, #seconds{
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-style: italic;
+  color: #C5333E;
+}
+p.aviable {
+    text-align: center;
+    padding: .5rem;
+    background: green;
+    color: white;
+    border-radius: 20px;
+}
+p.aviable.sold{
+  background: #C5333E;
+  font-weight: bold;
+  text-transform: uppercase;
+}

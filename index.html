@@ -502,12 +502,31 @@
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
                 <h2 class="module-title font-alt">Eventos</h2>
-                <div class="module-subtitle font-serif"></div>
+                <div class="module-subtitle font-serif">
+                  ¡Se acaba el tiempo, haz tu reservación ahora!
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12 text-center module-subtitle">
-                <div id="timer"></div>
+                <div id="timer-2">
+                  <div class="col-sm-3">
+                    <p id="days"></p>
+                    <p>Días</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <p id="hours"></p>
+                    <p>Horas</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <p id="minutes"></p>
+                    <p>Minutos</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <p id="seconds"></p>
+                    <p>Segundos</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row multi-columns-row post-columns">
@@ -520,7 +539,7 @@
                     </div>
                   </div>
                   <div class="post-entry">
-                    <p></p>
+                    <p class="aviable sold">¡Agotado!</p>
                   </div>
                   <div class="post-more"><a class="more-link" href="congreso.html">Más</a></div>
                 </div>
@@ -534,7 +553,7 @@
                     </div>
                   </div>
                   <div class="post-entry">
-                    <p></p>
+                    <p class=""></p>
                   </div>
                   <div class="post-more"><a class="more-link" href="beatificacion.html">Más</a></div>
                 </div>
@@ -548,7 +567,7 @@
                     </div>
                   </div>
                   <div class="post-entry">
-                    <p></p>
+                    <p class="aviable">¡1,394 boletos disponibles!</p>
                   </div>
                   <div class="post-more"><a class="more-link" href="comida.html">Más</a></div>
                 </div>
@@ -576,7 +595,7 @@
                     </div>
                   </div>
                   <div class="post-entry">
-                    <p></p>
+                    <p class="aviable">¡1,172 boletos disponibles!</p>
                   </div>
                   <div class="post-more"><a class="more-link" href="concierto.html">Más</a></div>
                 </div>
@@ -818,7 +837,10 @@
           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+          $('#days').text(days);
+          $('#hours').text(hours);
+          $('#minutes').text(minutes);
+          $('#seconds').text(seconds);
           // Display the result in the element with id="timer"
           document.getElementById("timer").innerHTML = "Faltan: " + days + " días " + hours + " horas "
           + minutes + " minutos y " + seconds + " segundos ";
