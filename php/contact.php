@@ -18,9 +18,9 @@
 	}
 
 	//Check if message has been entered
-	if (!isset($_POST['comprobante'])) {
-		$errors['comprobante'] = 'Por favor, introduce archivo de comprobante de pago';
-	}
+//	if (!isset($_POST['comprobante'])) {
+	//	$errors['comprobante'] = 'Por favor, introduce archivo de comprobante de pago';
+//	}
 
 
 	$errorOutput = '';
