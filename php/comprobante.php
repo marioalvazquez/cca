@@ -16,6 +16,10 @@
 	if (!isset($_POST['message'])) {
 		$errors['message'] = 'Por favor, introduce tu mensaje';
 	}
+	//Check if message has been entered
+	if (!isset($_POST['comprobante'])) {
+		$errors['comprobante'] = 'Por favor, introduce archivo de comprobante de pago';
+	}
 
 	$errorOutput = '';
 
@@ -43,7 +47,7 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'concepcioncabrera18@gmail.com';  // please change this email id
+	$to = 'marioal.vazquez@gmail.com';  // please change this email id
 	$subject = 'Contacto : Contacto desde sitio web';
 
 	$body = "De: $name\n Correo Electrónico: $email\n Mensaje:\n $message";

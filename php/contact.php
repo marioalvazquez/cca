@@ -62,7 +62,7 @@
 	if (mail ($to, $subject, $body, $headers)) {
 		$result .= '<div class="alert alert-success alert-dismissible" role="alert">';
  		$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-		$result .= 'GRACIAS, TU RESERVACION HA SIDO EXITOSAMENTE REALIZADA. Recibirás un correo de confirmación, en caso de no recibir ninguna notificación, comunicarse al número de atención a clientes…';
+		$result .= 'GRACIAS, hemos recibido tu contacto, pronto nos pondremos en comunicación contigo.';
 		$result .= '</div>';
 
 		echo $result;
