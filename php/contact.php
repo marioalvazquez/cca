@@ -50,7 +50,7 @@
 	$message = $_POST['message'];
 	$from = $email;
 	$to = 'concepcioncabrera18@gmail.com';  // please change this email id
-	$subject = 'Comprobante de Pago : Contacto desde sitio web';
+	$subject = 'Contacto desde sitio web';
 
 	$body = "De: $name\n Correo Electrónico: $email\n Mensaje:\n $message";
 
