@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-MX" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,10 +37,10 @@
 
     -->
     <style type="text/css">
-video {
-	width: 100%;
-}
-     </style>
+        video {
+            width: 100%;
+        }
+    </style>
     <!-- Default stylesheets-->
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template specific stylesheets-->
@@ -57,162 +58,165 @@ video {
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
-  </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
-      <div class="page-loader">
-        <div class="loader">Cargando...</div>
-      </div>
-      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">
-              <img src="assets/images/logo.png" width="150px"/></a>
-            <a href="https://www.facebook.com/ConcepcionCabreraOficial/" target="_blank" class="socials-header">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/concepcioncabrerabeata/" target="_blank" class="socials-header">
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCQzqtdAQskvqscB1YfvAXjw/" target="_blank" class="socials-header">
-              <i class="fa fa-youtube-play"></i>
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a class="dropdown-toggle" href="index.html">Inicio</a>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="index.html#us">Milagro</a>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="index.html#news">Eventos</a>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="index.html#works">Descarga Gratis</a>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="index.html#subscription-form">Contacto</a>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="index.html#aportacion">Aportación Voluntaria</a>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="index.html#blogs">Blogs</a>
-              </li>
-              <!--li.dropdown.navbar-cart-->
-              <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
-              <!--        span.icon-basket-->
-              <!--        |-->
-              <!--        span.cart-item-number 2-->
-              <!--    ul.dropdown-menu.cart-list(role='menu')-->
-              <!--        li-->
-              <!--            .navbar-cart-item.clearfix-->
-              <!--                .navbar-cart-img-->
-              <!--                    a(href='#')-->
-              <!--                        img(src='assets/images/shop/product-9.jpg', alt='')-->
-              <!--                .navbar-cart-title-->
-              <!--                    a(href='#') Short striped sweater-->
-              <!--                    |-->
-              <!--                    span.cart-amount 2 &times; $119.00-->
-              <!--                    br-->
-              <!--                    |-->
-              <!--                    strong.cart-amount $238.00-->
-              <!--        li-->
-              <!--            .navbar-cart-item.clearfix-->
-              <!--                .navbar-cart-img-->
-              <!--                    a(href='#')-->
-              <!--                        img(src='assets/images/shop/product-10.jpg', alt='')-->
-              <!--                .navbar-cart-title-->
-              <!--                    a(href='#') Colored jewel rings-->
-              <!--                    |-->
-              <!--                    span.cart-amount 2 &times; $119.00-->
-              <!--                    br-->
-              <!--                    |-->
-              <!--                    strong.cart-amount $238.00-->
-              <!--        li-->
-              <!--            .clearfix-->
-              <!--                .cart-sub-totle-->
-              <!--                    strong Total: $476.00-->
-              <!--        li-->
-              <!--            .clearfix-->
-              <!--                a.btn.btn-block.btn-round.btn-font-w(type='submit') Checkout-->
-              <!--li.dropdown-->
-              <!--    a.dropdown-toggle(href='#', data-toggle='dropdown') Search-->
-              <!--    ul.dropdown-menu(role='menu')-->
-              <!--        li-->
-              <!--            .dropdown-search-->
-              <!--                form(role='form')-->
-              <!--                    input.form-control(type='text', placeholder='Search...')-->
-              <!--                    |-->
-              <!--                    button.search-btn(type='submit')-->
-              <!--                        i.fa.fa-search-->
-            </ul>
-          </div>
+        <div class="page-loader">
+            <div class="loader">Cargando...</div>
         </div>
-      </nav>
-      <div class="main">
-        <section class="module">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-sm-offset-1">
-                <div class="post">
-                  <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">Pago completado con éxito</a></h2>
-                    <div class="post-meta">Enviar comprobante de pago al correo para finalizar compra
-                    </div>
-                  </div></div>
-                <div class="post">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <form id="comprobanteForm" role="form" method="post" action="php/comprobante.php">
-                        <div class="form-group">
-                          <label class="sr-only" for="name">Nombre</label>
-                          <input class="form-control" type="text" id="name" name="name" placeholder="Nombre*" required="required" data-validation-required-message="Por favor, ingresa tu nombre."/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <label class="sr-only" for="email">Correo Electrónico</label>
-                          <input class="form-control" type="email" id="email" name="email" placeholder="Correo Electrónico*" required="required" data-validation-required-message="Por favor, ingresa tu dirección de correo electrónico."/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <label for="comprobante">Comprobante de pago</label>
-                          <input type="file" class="form-control" id="comprobante" name="comprobante" placeholder="Ingresa archivo comprobante" required="required" data-validation-required-message="Por favor, ingresa tu comprobante de pago">
-                        </div>
-                        <div class="form-group">
-                          <textarea class="form-control" rows="7" id="message" name="message" placeholder="Mensaje"></textarea>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="text-center">
-                          <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Enviar</button>
-                        </div>
-                      </form>
-                      <div class="ajax-response font-alt" id="comprobanteFormResponse"></div>
-                    </div>
-                    </div>
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" width="150px" /></a>
+                    <a href="https://www.facebook.com/ConcepcionBeata/" target="_blank" class="socials-header">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/concepcionbeata/" target="_blank" class="socials-header">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCQzqtdAQskvqscB1YfvAXjw/" target="_blank" class="socials-header">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
                 </div>
-                </div>
-                <h4 class="font-alt mt-40 mb-0">Mayores Informes</h4>
-                <hr class="divider-w mt-10 mb-20">
-                <div class="alert alert-info" role="alert">
-                  <i class="fa fa-user"></i><strong>Contacto</strong> Tessy Cifuentes.<br/>
-                  <i class="fa fa-phone"></i><strong>Teléfono</strong><a href="tel:+5215586623528"> +52 55 86623528</a><br/>
-                  <i class="fa fa-envelope"></i><strong>Correo</strong><a href="mailto:concepcioncabrera18@gmail.com"> concepcioncabrera18@gmail.com</a>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a class="dropdown-toggle" href="index.html">Inicio</a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" href="index.html#us">Milagro</a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" href="index.html#news">Eventos</a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" href="index.html#works">Descarga Gratis</a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" href="index.html#subscription-form">Contacto</a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" href="index.html#aportacion">Aportación Voluntaria</a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" href="index.html#blogs">Blogs</a>
+                        </li>
+                        <!--li.dropdown.navbar-cart-->
+                        <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
+                        <!--        span.icon-basket-->
+                        <!--        |-->
+                        <!--        span.cart-item-number 2-->
+                        <!--    ul.dropdown-menu.cart-list(role='menu')-->
+                        <!--        li-->
+                        <!--            .navbar-cart-item.clearfix-->
+                        <!--                .navbar-cart-img-->
+                        <!--                    a(href='#')-->
+                        <!--                        img(src='assets/images/shop/product-9.jpg', alt='')-->
+                        <!--                .navbar-cart-title-->
+                        <!--                    a(href='#') Short striped sweater-->
+                        <!--                    |-->
+                        <!--                    span.cart-amount 2 &times; $119.00-->
+                        <!--                    br-->
+                        <!--                    |-->
+                        <!--                    strong.cart-amount $238.00-->
+                        <!--        li-->
+                        <!--            .navbar-cart-item.clearfix-->
+                        <!--                .navbar-cart-img-->
+                        <!--                    a(href='#')-->
+                        <!--                        img(src='assets/images/shop/product-10.jpg', alt='')-->
+                        <!--                .navbar-cart-title-->
+                        <!--                    a(href='#') Colored jewel rings-->
+                        <!--                    |-->
+                        <!--                    span.cart-amount 2 &times; $119.00-->
+                        <!--                    br-->
+                        <!--                    |-->
+                        <!--                    strong.cart-amount $238.00-->
+                        <!--        li-->
+                        <!--            .clearfix-->
+                        <!--                .cart-sub-totle-->
+                        <!--                    strong Total: $476.00-->
+                        <!--        li-->
+                        <!--            .clearfix-->
+                        <!--                a.btn.btn-block.btn-round.btn-font-w(type='submit') Checkout-->
+                        <!--li.dropdown-->
+                        <!--    a.dropdown-toggle(href='#', data-toggle='dropdown') Search-->
+                        <!--    ul.dropdown-menu(role='menu')-->
+                        <!--        li-->
+                        <!--            .dropdown-search-->
+                        <!--                form(role='form')-->
+                        <!--                    input.form-control(type='text', placeholder='Search...')-->
+                        <!--                    |-->
+                        <!--                    button.search-btn(type='submit')-->
+                        <!--                        i.fa.fa-search-->
+                    </ul>
                 </div>
             </div>
-          </div>
-        </section>
-        <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Horario de Atención:<br/> Lunes a Viernes:<br/> 9:30 a.m - 2:00 p.m<br/> 4:00 p.m - 6:30 p.m</h5>
-                  <p></p>
-                  <p>Teléfono: +52 55 86623528</p>
-                  <p>Email: <a href="#">concepcioncabrera18@gmail.com</a></p>
+        </nav>
+        <div class="main">
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-sm-offset-1">
+                            <div class="post">
+                                <div class="post-header font-alt">
+                                    <h2 class="post-title"><a href="#">Pago completado con éxito</a></h2>
+                                    <div class="post-meta">Enviar comprobante de pago al correo para finalizar compra
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <form id="comprobanteForm" role="form" method="post" action="php/comprobante.php">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="name">Nombre</label>
+                                                <input class="form-control" type="text" id="name" name="name" placeholder="Nombre*" required="required" data-validation-required-message="Por favor, ingresa tu nombre." />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="email">Correo Electrónico</label>
+                                                <input class="form-control" type="email" id="email" name="email" placeholder="Correo Electrónico*" required="required" data-validation-required-message="Por favor, ingresa tu dirección de correo electrónico." />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="comprobante">Comprobante de pago</label>
+                                                <input type="file" class="form-control" id="comprobante" name="comprobante" placeholder="Ingresa archivo comprobante" required="required" data-validation-required-message="Por favor, ingresa tu comprobante de pago">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" rows="7" id="message" name="message" placeholder="Mensaje"></textarea>
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="text-center">
+                                                <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Enviar</button>
+                                            </div>
+                                        </form>
+                                        <div class="ajax-response font-alt" id="comprobanteFormResponse"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="font-alt mt-40 mb-0">Mayores Informes</h4>
+                        <hr class="divider-w mt-10 mb-20">
+                        <div class="alert alert-info" role="alert">
+                            <i class="fa fa-user"></i><strong>Contacto</strong> Tessy Cifuentes.<br/>
+                            <i class="fa fa-phone"></i><strong>Teléfono</strong><a href="tel:+5215586623528"> +52 55 86623528</a><br/>
+                            <i class="fa fa-envelope"></i><strong>Correo</strong><a href="mailto:concepcioncabrera18@gmail.com"> concepcioncabrera18@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Blogs</h5>
-                  <ul class="widget-posts">
-                    <!-- <li class="clearfix">
+            </section>
+            <div class="module-small bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <h5 class="widget-title font-alt">Horario de Atención:<br/> Lunes a Viernes:<br/> 9:30 a.m - 2:00 p.m<br/> 4:00 p.m - 6:30 p.m</h5>
+                                <p></p>
+                                <p>Teléfono: +52 55 86623528</p>
+                                <p>Email: <a href="#">concepcioncabrera18@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <h5 class="widget-title font-alt">Blogs</h5>
+                                <ul class="widget-posts">
+                                    <!-- <li class="clearfix">
                       <div class="widget-posts-image"><a href="item1.html"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
                       <div class="widget-posts-body">
                         <div class="widget-posts-title"><a href="#item1.html">Diseño de experiencias</a></div>
@@ -226,28 +230,29 @@ video {
                         <div class="widget-posts-meta">15 de Febrero</div>
                       </div>
                     </li> -->
-                  </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <hr class="divider-d">
+            <footer class="footer bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="copyright font-alt">&copy; 2019&nbsp;<a href="index.html">Beatificación de Concepción Cabrera</a>, Todos los derechos reservados</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-youtube-play"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <hr class="divider-d">
-        <footer class="footer bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2019&nbsp;<a href="index.html">Beatificación de Concepción Cabrera</a>, Todos los derechos reservados</p>
-              </div>
-              <div class="col-sm-6">
-                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-youtube-play"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div></main>
+        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
     <!--
     JavaScripts
     =============================================
@@ -266,40 +271,40 @@ video {
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
-      $("#comprobanteForm").submit(function (e) {
+        $("#comprobanteForm").submit(function(e) {
 
-          e.preventDefault();
-          var $ = jQuery;
+            e.preventDefault();
+            var $ = jQuery;
 
-          var postData = $(this).serializeArray(),
-              formURL = $(this).attr("action"),
-              $cfResponse = $('#comprobanteFormResponse'),
-              $cfsubmit = $("#cfsubmit"),
-              cfsubmitText = $cfsubmit.text();
+            var postData = $(this).serializeArray(),
+                formURL = $(this).attr("action"),
+                $cfResponse = $('#comprobanteFormResponse'),
+                $cfsubmit = $("#cfsubmit"),
+                cfsubmitText = $cfsubmit.text();
 
-          $cfsubmit.text("Enviando...");
+            $cfsubmit.text("Enviando...");
 
 
-          $.ajax(
-              {
-                  url: formURL,
-                  type: "POST",
-                  data: postData,
-                  success: function (data) {
-                      $cfResponse.html(data);
-                      $cfsubmit.text(cfsubmitText);
-                      $('#comprobanteForm input[name=name]').val('');
-                      $('#comprobanteForm input[name=email]').val('');
-                      $('#comprobanteForm textarea[name=message]').val('');
-                  },
-                  error: function (data) {
-                      alert("Algo salió mal, por favor contáctate con el administrador, intente de nuevo, o envíe comprobante manualmente!");
-                  }
-              });
+            $.ajax({
+                url: formURL,
+                type: "POST",
+                data: postData,
+                success: function(data) {
+                    $cfResponse.html(data);
+                    $cfsubmit.text(cfsubmitText);
+                    $('#comprobanteForm input[name=name]').val('');
+                    $('#comprobanteForm input[name=email]').val('');
+                    $('#comprobanteForm textarea[name=message]').val('');
+                },
+                error: function(data) {
+                    alert("Algo salió mal, por favor contáctate con el administrador, intente de nuevo, o envíe comprobante manualmente!");
+                }
+            });
 
-          return false;
+            return false;
 
-      });
+        });
     </script>
-  </body>
+</body>
+
 </html>
