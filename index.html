@@ -106,11 +106,18 @@
                         </li>
                         <li class="dropdown"><a class="dropdown-toggle" href="#services">Descarga Gratis</a>
                         </li>
-                        <li class="dropdown"><a class="dropdown-toggle" href="#subscription-form">Contacto</a>
+                        <!--<li class="dropdown"><a class="dropdown-toggle" href="#subscription-form">Contacto</a>
                         </li>
+                        -->
                         <li class="dropdown"><a class="dropdown-toggle" href="#aportacion">Aportación Voluntaria</a>
                         </li>
+                        <!--
                         <li class="dropdown"><a class="dropdown-toggle" href="#blogs">Blogs</a>
+                        </li>
+                        -->
+                        <li class="dropdown btn btn-border-d btn-round btn-donativo" style="margin: 5px 0; padding: 0">
+                          <a class="dropdown-toggle" id="misaVivo" style="padding: 10px;">
+                          <i class="glyphicon glyphicon-facetime-video"></i> Ver Misa en Vivo</a>
                         </li>
                         <!--li.dropdown.navbar-cart-->
                         <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
@@ -933,6 +940,23 @@
     JavaScripts
     =============================================
     -->
+    <!-- Live video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Transmisión en vivo</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="assets/lib/jquery/dist/jquery.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/lib/wow/dist/wow.js"></script>
@@ -949,6 +973,20 @@
     <script type="text/javascript" src="https://cdn.conekta.io/js/latest/conekta.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+
+            //facebook-live-video
+
+            count = 0;
+            $('#misaVivo').click(function(){
+              $('#videoModal').modal();
+              if (count == 0){
+                $('#videoModal .modal-body').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/pNjMl_cYQ5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+              }
+              count++;
+            });
+
+
+
             $('.video-controls').prepend('<p class="video-controls-text text-center">Suspender audio/video</p>');
             // Set the date we're counting down to
             var countDownDate = new Date("May 3, 2019 15:00:00").getTime();
